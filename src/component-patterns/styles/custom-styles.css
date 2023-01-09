@@ -20,3 +20,11 @@
     color:white;
     border-color: white;
 }
+
+
+.shopping-cart{
+    position: fixed;
+    top: 0;
+    margin-right: 0;
+    margin-left: calc(90% - 300px);
+}

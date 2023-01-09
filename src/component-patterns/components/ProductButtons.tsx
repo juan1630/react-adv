@@ -15,7 +15,9 @@ export const ProductButtons = ({ className, style }: Props) => {
  
      return(
          <div className={`${styles.buttonsContainer }  ${ className } `} style={  style}   >
-            <button className={ styles.buttonMinus } >
+            <button className={ styles.buttonMinus } 
+                onClick={ ()=> increase(-1) }
+            >
                 -
             </button>
             <div className={styles.countLabel} >

@@ -22,3 +22,14 @@ export interface ProductCardhoc{
     Image: (Props: ProductImageProps ) => JSX.Element;
     Buttons: ({className}: ProductButtons ) => JSX.Element ;
 }
+
+
+export interface onChangeArgs {
+    product: Product;
+    count: number;
+}
+
+export interface ProductInCart extends Product {
+    count: number;
+    //extendemos de la interfaz del producto y la agregamos la propiedad count
+}
